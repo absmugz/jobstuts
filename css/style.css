@@ -1,0 +1,252 @@
+/*
+Stylesheet for CodeIgniter Job Board
+Tutorial for Nettuts
+by DanHarper.me
+*/
+
+*{margin:0;padding:0;outline:0;}
+
+body {
+	background-color: #f7f7f7;
+	color: #111;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{font-family:Georgia, "Times New Roman", Times, serif;font-weight:normal;letter-spacing:1px;}
+h1,h2,h3,h4,h5,h6,p,ul,ol{margin:5px 0 10px 0;}
+h2{color:#363636;font-variant:small-caps;}
+p,li{font-size:0.9em;line-height:1.4em;}
+li{list-style-position:inside;margin-bottom:5px;}
+a:link,a:visited{text-decoration:none;}
+a:hover,a:active,a:focus{text-decoration:underline;}
+
+#wrap {
+	background: url("images/bg.png") repeat-y #fff;
+	border: 1px solid #dddddd;
+	border-top: none;
+	margin: 0 auto;
+	overflow: hidden;
+	width: 960px;
+}
+
+#head {
+	background: url("images/head.gif") repeat-x #454545;
+	padding: 30px 0;
+}
+
+#head h1 {
+	margin: 0 0 0 20px;
+}
+
+#head h1 a {
+	background: url("images/logo.png") no-repeat;
+	display: block;
+	height: 60px;
+	text-indent: -9999em;
+	width: 380px;
+}
+
+#content {
+	float: left;
+	padding: 15px 0 20px 20px;
+	width: 720px;
+	overflow: hidden;
+}
+
+h2 span.jobcount {
+	background-color: #454545;
+	color: #eee;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 0.8em;
+	padding: 2px 6px;
+	margin-left: 8px;
+}
+
+h2 cite {
+	background-color: #454545;
+	color: #eee;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 0.5em;
+	padding: 2px 6px;
+	margin-left: 8px;
+	font-style: normal;
+	font-variant: normal;
+}
+
+h4 {
+	margin: 25px 0 5px 0;
+}
+
+ol#listings li {
+	list-style: none;
+	margin:0;
+}
+
+ol li {
+	list-style-position: outside;
+	margin-left: 30px;
+}
+
+ol#listings li a {
+	background-color: #fafafa;
+	border-bottom: 1px solid #efefef;
+	border-top: 1px solid #fefefe;
+	display: block;
+	float: left;
+	padding: 10px;
+	position: relative;
+	width: 700px;
+}
+
+ol#listings li.alt a {
+	background-color: #f7f7f7;
+}
+
+ol#listings li a:hover, ol#listings li a:active, ol#listings li a:focus {
+	background-color: #efefef;
+	text-decoration: none;
+}
+
+span.title, span.meta {
+	float: left;
+	width: 60%;
+}
+
+span.title {
+	color: #111;
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-bottom: 4px;
+}
+
+span.meta {
+	color: #444;
+	font-size: 0.8em;
+}
+
+span.meta em {
+	font-size: 0.9em;
+	vertical-align: top;
+}
+
+span.posted {
+	color: #444;
+	float: right;
+	font-size: 0.9em;
+	position: absolute;
+	right: 10px;
+	text-align: right;
+	top: 19px;
+	width: 30%;
+}
+
+span.posted cite {
+	font-size: 0.8em;
+}
+
+.miscinfo {
+	color: #555;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 0.7em;
+	font-style: italic;
+}
+
+.miscinfo strong {
+	padding-right: 4px;
+}
+
+.miscinfo a {
+	color: #555;
+}
+
+.miscinfo a:hover {
+	text-decoration: underline;
+}
+
+.maininfo {
+	margin-top: 20px;
+}
+
+p.error {
+	background-color: #f4dde0;
+	border: 1px solid #a23535;
+	color: #222;
+	padding: 5px 10px;
+}
+
+p.success {
+	background-color: #060;
+	border: 2px solid #0F0;
+	color: #fff;
+	padding: 5px 10px;
+}
+	
+#sidebar {
+	float: right;
+	padding: 15px 20px 20px 20px;
+	width: 160px;
+}
+
+#sidebar p.addlisting {
+	border: 1px solid #444;
+	margin: 0 0 15px 0;
+}
+
+#sidebar p.addlisting a {
+	background-color: #454545;
+	border: 1px solid #fefefe;
+	color: #eee;
+	display: block;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 1.2em;
+	font-variant: small-caps;
+	padding: 10px 0;
+	text-align: center;
+}
+
+#sidebar p.addlisting a:hover {
+	border: 1px solid #444;
+	text-decoration: none;
+}
+
+#sidebar ul li {
+	list-style: none;
+	margin-bottom:0;
+}
+
+#sidebar ul li span {
+	color: #696969;
+	font-size: 0.9em;
+	padding-right: 10px;
+	vertical-align: text-bottom;
+}
+
+#sidebar ul li a {
+	color: #363636;
+	display: block;
+	padding: 8px;
+	text-decoration: none;
+}
+	
+#sidebar ul li a:hover {
+	background-color: #efefef;
+	text-decoration: none;
+}
+
+#footer {
+	color: #666;
+	clear: both;
+	font-family: Georgia, Times New Roman, serif;
+	font-style: italic;
+	margin: 15px auto;
+	width: 960px;
+}
+
+#footer a {
+	color: #666;
+	text-decoration: underline;
+}
+
+#footer a:hover {
+	text-decoration: none;
+}
